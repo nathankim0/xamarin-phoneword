@@ -11,8 +11,41 @@ using UIKit;
 
 namespace Phoneword_iOS
 {
-    [Register("ViewController")]
+    [Register ("ViewController")]
     partial class ViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton CallButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField PhoneNumberText { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton TranslateButton { get; set; }
+
+        [Action ("UIButtons0j8qbJZ_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UIButtons0j8qbJZ_TouchUpInside (UIKit.UIButton sender);
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (CallButton != null) {
+                CallButton.Dispose ();
+                CallButton = null;
+            }
+
+            if (PhoneNumberText != null) {
+                PhoneNumberText.Dispose ();
+                PhoneNumberText = null;
+            }
+
+            if (TranslateButton != null) {
+                TranslateButton.Dispose ();
+                TranslateButton = null;
+            }
+        }
     }
 }
